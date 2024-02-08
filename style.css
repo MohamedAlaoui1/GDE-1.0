@@ -673,6 +673,9 @@ footer::before {
   .manifesto_deco img {
     width: 6.8rem;
   }
+  .gallery_title p::after {
+    margin: 1.2rem auto 0 auto;
+  }
 }
 @media (max-width: 44.625em) {
   .video_container {
