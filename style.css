@@ -1,0 +1,773 @@
+@font-face {
+  font-family: "Roxborough CF-Light";
+  src: url(roxborough-cf-font-1701956652-0/RoxboroughCF-Light.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roxborough CF-Reg";
+  src: url(roxborough-cf-font-1701956652-0/RoxboroughCF-Regular.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roxborough CF-Bold";
+  src: url(roxborough-cf-font-1701956652-0/RoxboroughCF-Bold.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roxborough CF-semiB";
+  src: url(roxborough-cf-font-1701956652-0/RoxboroughCF-DemiBold.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ahsing";
+  src: url(Ahsing-font-free-download/Ahsing-Regular.otf);
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #232222;
+  font-family: "Roxborough CF-Reg", sans-serif;
+  color: #fffcdf;
+  position: relative;
+}
+::selection {
+  background: #670000;
+  color: #e1e1e1;
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  transition: 0.5s;
+}
+.sticky {
+  background-color: #686541;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.7rem 3rem 0.7rem 1.5rem;
+}
+.GDE_logo {
+  width: 8.2rem;
+  height: 8.26rem;
+}
+
+.gdemeasure {
+  width: 5.2rem;
+  height: 5.26rem;
+}
+
+.nav_bar ul {
+  display: flex;
+  font-size: 1.6rem;
+}
+.ulcolors {
+  color: #f0f0f0;
+}
+.nav_bar ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.nav_bar ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fffcdf;
+}
+
+.nav_bar ul li:last-child {
+  margin-right: 0;
+}
+
+.nav_bar ul li::after {
+  content: " ";
+  display: block;
+  margin-top: 3px;
+  height: 2px;
+  width: 0%;
+  background-color: #fffcdf;
+  transition: 0.4s all;
+}
+
+.nav_bar ul li:hover:after {
+  width: 100%;
+}
+.slogans__main {
+  display: flex;
+}
+.head__title__main {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.head__title__main::after {
+  content: "";
+  height: 0.5rem;
+  animation: underlined 0.7s 2.3s forwards;
+  animation-fill-mode: backwards;
+  background-color: #fffcdf;
+  margin-top: 0.5rem;
+}
+.head__flex {
+  display: flex;
+}
+.head__blocs {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+}
+.bloc {
+  background-color: #fffcdf;
+  animation: blocanim 1s;
+  animation-fill-mode: backwards;
+}
+
+.bloc:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.bloc:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.bloc:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.bloc1 {
+  height: 6rem;
+  width: 1.8rem;
+}
+.bloc2,
+.bloc3 {
+  height: 7rem;
+  width: 1.7rem;
+}
+.bloc4 {
+  height: 6.8rem;
+  width: 1.7rem;
+  animation: blocanim 0.5s 1.5s backwards, blocinc 0.5s 2s forwards;
+}
+.bloc5 {
+  height: 7rem;
+  width: 1.3rem;
+  margin-left: 1.3rem;
+}
+.head__title__con {
+  font-size: 7rem;
+  width: 100%;
+  text-align: center;
+  margin-left: -6rem;
+}
+.head__title {
+  text-transform: uppercase;
+  font-family: "Ahsing";
+}
+.head__slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: "Roxborough CF-Light";
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+.head__section {
+  margin-top: 7rem;
+  background-color: #232222;
+}
+.head__title img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.manifesto__main {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+}
+.manifesto_deco img {
+  width: 5rem;
+  height: 100%;
+}
+.head__manifesto {
+  text-align: center;
+}
+.manifesto__quote {
+  font-size: 1.8rem;
+  font-family: "Roxborough CF-semiB", sans-serif;
+  margin-top: 1.8rem;
+}
+.manifesto__text {
+  background-color: #fffcdf;
+  color: #232222;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  font-family: "Roxborough CF-semiB", sans-serif;
+  width: 50rem;
+  text-align: start;
+  letter-spacing: 0.5px;
+}
+
+.journal__section {
+  margin-top: 6.8rem;
+  position: relative;
+  width: 100%;
+}
+
+.journal__section video {
+  width: 100%;
+  height: 60rem;
+}
+
+.journal__section .btn_container {
+  display: flex;
+  justify-content: center;
+}
+.btn_container button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 0.7rem 2.8rem;
+  font-size: 1.8rem;
+  font-family: "Roxborough CF-Reg", sans-serif;
+  background-color: #fffcdf;
+  color: #232222;
+  margin-top: 5rem;
+}
+
+.btn_container button:hover {
+  background-color: #dcdac3;
+}
+
+.btn_container button:active {
+  transform: translateY(1px);
+}
+.pop_up__window {
+  background-color: #232222;
+  height: 50rem;
+  padding: 4rem;
+  position: fixed;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#container.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  filter: none;
+}
+
+.popup__title {
+  color: #fffcdf;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roxborough CF-Bold";
+  margin-bottom: 4rem;
+  margin-top: -2rem;
+  word-spacing: 0.5rem;
+}
+
+.toJournal_btn {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s all;
+  margin-right: 1.5rem;
+}
+#jb1::after {
+  content: "JOURNAL  1";
+}
+#jb2::after {
+  content: "JOURNAL  2";
+}
+#jb3::after {
+  content: "JOURNAL  3";
+}
+.toJournal_btn::after {
+  font-size: 1.8rem;
+  letter-spacing: 1.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.toJournal_btn:hover:after {
+  height: 100%;
+  opacity: 1;
+}
+
+.toJournal_btn__label {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  transition: 0.3s;
+}
+
+.toJournal_btn:hover .toJournal_btn__label {
+  display: none;
+}
+.toJournal_btn:hover {
+  transform: scale(1.05);
+}
+
+.toJournal_btn:active {
+  transform: scale(1);
+}
+
+.journalpic_img {
+  width: 13rem;
+
+  height: 17rem;
+}
+.close__btn {
+  position: absolute;
+  display: block;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.close__btn:hover {
+  transform: scale(1.1);
+}
+.close__btn:active {
+  transform: translateY(-1px);
+}
+
+.gallery__section {
+  margin-top: 7.2rem;
+}
+
+.gallery_title p {
+  text-transform: uppercase;
+  font-family: "Ahsing", sans-serif;
+  text-align: center;
+  font-size: 4.2rem;
+}
+
+.gallery_title p::after,
+.gallery_title p::before {
+  content: "";
+  display: block;
+  background-color: #fffcdf;
+  width: 90%;
+  text-align: center;
+  height: 0.3rem;
+  margin: 0rem auto;
+}
+.gallery_title p::after {
+  margin: 1.2rem auto 0 auto;
+}
+.gallery_container {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(35, 34, 34, 0.96),
+      rgba(35, 34, 34, 0.96)
+    ),
+    url(pictures/backPic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+.pic_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 12rem;
+}
+.gallery_item {
+  overflow: hidden;
+}
+.pic_container img {
+  height: 18rem;
+  width: 18rem;
+  transition: all 0.4s;
+}
+.pic_container img:hover {
+  transform: scale(1.1);
+}
+.event_container video {
+  height: 40rem;
+  /* width: 30rem; */
+}
+.video_container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.event_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event_container p {
+  font-family: "ahsing", sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.card__container {
+  background-image: url(pictures/backPic2.png);
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 70%;
+  margin: 5rem auto;
+  transition: 0.3s;
+}
+.card__container:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+.card__main {
+  background-image: linear-gradient(
+    rgba(35, 34, 34, 0.9) 0%,
+    rgba(35, 34, 34, 0.9) 50%
+  );
+  clip-path: polygon(0 0, 70% 0, 51% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.card__text {
+  font-size: 3rem;
+  padding: 2rem 0 1rem 3rem;
+}
+
+.social__icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 10%;
+  gap: 2rem;
+  padding: 2rem;
+  margin-left: 15%;
+}
+
+.social__icon a {
+  transition: 0.3s;
+}
+
+.social__icon a:hover {
+  transform: scale(1.1);
+}
+
+.social__icon i {
+  font-size: 4rem;
+}
+.card__text,
+.card__container span {
+  width: 50%;
+}
+
+.card__container span {
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  padding: 1rem 0 3rem 3rem;
+}
+
+.logo__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+.footer__section {
+  margin-top: 15rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+footer::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fffcdf;
+  margin-bottom: 7rem;
+}
+.GDE_logo_footer {
+  width: 5.2rem;
+  height: 5.26rem;
+}
+.logo_label {
+  font-size: 2.6rem;
+  font-family: "Ahsing";
+  text-transform: uppercase;
+}
+
+.cpr {
+  font-family: "Roxborough CF-Light" sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes blocanim {
+  0% {
+    transform: translateY(-15rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blocinc {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateX(-0.5rem) rotate(-16deg);
+  }
+}
+
+@keyframes underlined {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.manifesto__text__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.phone__logo {
+  width: 100%;
+  margin-top: 4rem;
+  display: none;
+}
+.phone__logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.mail__adress {
+  transform: translateY(3rem);
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: 1.3px;
+}
+/*----------------------------------------------------*/
+
+@media (max-width: 74em) {
+  .manifesto__text {
+    font-size: 1.6rem;
+    width: 44rem;
+  }
+
+  .head__title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 66.25em) {
+  .manifesto__text {
+    width: 43rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 58.875em) {
+  html {
+    font-size: 52.25%;
+  }
+  #read-btn {
+    font-size: 2rem;
+  }
+  .head__slogan {
+    font-size: 1.6rem;
+  }
+  .bloc5 {
+    height: 8rem;
+  }
+  .bloc4 {
+    height: 7.8rem;
+  }
+  .bloc3 {
+    height: 8rem;
+  }
+  .bloc2 {
+    height: 8rem;
+  }
+  .bloc1 {
+    height: 7rem;
+  }
+  .video_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video_container video {
+    height: 51rem;
+    width: 68rem;
+  }
+}
+@media (max-width: 52.43em) {
+  .manifesto__text__container {
+    flex-direction: column;
+  }
+  #read-btn {
+    font-size: 2rem;
+  }
+  .nav_bar ul li a {
+    font-size: 1.8rem;
+  }
+  .manifesto__text {
+    font-size: 1.8rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .manifesto_deco img {
+    width: 6.8rem;
+  }
+}
+@media (max-width: 44.625em) {
+  .video_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video_container video {
+    height: 51rem;
+    width: 68rem;
+  }
+  .card__container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 39.3125em) {
+  html {
+    font-size: 50%;
+  }
+  .video_container video {
+    width: auto;
+  }
+  .video__main {
+    display: flex;
+  }
+  .video__main video {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .head__title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  html {
+    font-size: 48%;
+  }
+  .card__main {
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+  }
+  .card__text {
+    width: 83%;
+  }
+  .card__container span {
+    width: 60%;
+  }
+  .manifesto_deco img {
+    width: 5.8rem;
+  }
+  .GDE_logo {
+    display: none;
+  }
+  .nav_bar {
+    padding: 2rem;
+    justify-content: center;
+  }
+  .head__slogan {
+    font-size: 1.2rem;
+  }
+  .bloc5 {
+    height: 6rem;
+  }
+  .bloc4 {
+    height: 5.8rem;
+  }
+  .bloc3 {
+    height: 6rem;
+  }
+  .bloc2 {
+    height: 6rem;
+  }
+  .bloc1 {
+    height: 5rem;
+  }
+  .head__title {
+    font-size: 4rem;
+  }
+  .phone__logo {
+    display: block;
+  }
+}
+
+@media (max-width: 25em) {
+  .head__slogan {
+    display: none;
+  }
+  .manifesto_deco img {
+    display: none;
+  }
+  .head__title__con {
+    text-align: right;
+    margin-right: 4rem;
+  }
+  .nav_bar ul li a {
+    font-size: 1.4rem;
+  }
+}
