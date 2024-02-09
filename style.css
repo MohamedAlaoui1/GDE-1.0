@@ -617,6 +617,12 @@ footer::before {
   .manifesto__text {
     width: 43rem;
   }
+  .nav_bar ul li::after {
+    display: none;
+  }
+  .nav_bar ul li:hover:after {
+    display: none;
+  }
   html {
     font-size: 56.25%;
   }
