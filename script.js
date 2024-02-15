@@ -6,6 +6,13 @@ const toJournal = document.querySelectorAll(".toJournal_btn");
 const header = document.querySelector(".nav_bar");
 const gdelogo = document.querySelector(".GDE_logo");
 const nava = document.querySelectorAll(".colordecider");
+const videoList = document.getElementsByTagName("video");
+
+for (let i = 0; i < videoList.length; i++) {
+  videoList[i].addEventListener("ended", () => {
+    videoList[i].webkitExitFullscreen();
+  });
+}
 
 function changeColor(color) {
   for (let i = 0; i < nava.length; i++) {
